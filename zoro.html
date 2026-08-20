@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Assignment - 1</title>
+    <style>
+        /* Light background for clean readability */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 1. Header with Navy Blue background and White text */
+        header {
+            background-color: #0A192F;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            color: #ffffff;
+        }
+
+        .header-info {
+            font-size: 1.1em;
+            margin: 5px 0;
+            color: #e2e8f0;
+        }
+
+        /* Links styled like background buttons with Navy accents */
+        a {
+            color: #0A192F;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+            background-color: #e2e8f0;
+            border: 1px solid #cbd5e1;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0A192F;
+            color: #ffffff;
+        }
+
+        /* 2. Scrolling updates section */
+        .marquee-container {
+            background-color: #1E3A8A;
+            color: #ffffff;
+            padding: 10px;
+            margin: 15px 0;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        /* Content section card styling */
+        .content-section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .content-section h2 {
+            color: #0A192F;
+            margin-top: 0;
+        }
+
+        /* 3. Image styling - updated to ensure clarity of the notebook content */
+        .profile-img {
+            max-width: 100%; /* Responsive to different screens */
+            width: 600px;    /* A good default size to make the text legible */
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #0A192F;
+            margin: 10px 0;
+            display: block;  /* Helps center it */
+        }
+
+        /* 5. Table with Navy header and alternating row colors */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #cbd5e1;
+        }
+
+        th {
+            background-color: #0A192F;
+            color: #ffffff;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            background-color: #ffffff;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f1f5f9;
+        }
+
+        /* 6. Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 500px;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            background-color: #ffffff;
+            color: #0A192F;
+        }
+
+        input:focus, textarea:focus {
+            outline: 2px solid #1E3A8A;
+        }
+
+        button {
+            background-color: #0A192F;
+            color: #ffffff;
+            padding: 12px;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #1E3A8A;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HEADER (Name, College, Roll Number) -->
+    <header>
+        <h1>Web Development Assignment - 1</h1>
+        <div class="header-info"><strong>Student Name:</strong> HARSHITH</div>
+        <div class="header-info"><strong>College:</strong> KPRIT-COE</div>
+        <div class="header-info"><strong>Roll Number:</strong> 21B91A0501</div>
+    </header>
+
+    <!-- 2. SCROLLING UPDATES -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left">
+            📢 Announcement: Web Development Assignment-1 submission deadline is extended! Check details at <a href="#links">Useful Links</a>.
+        </marquee>
+    </div>
+
+    <!-- 3. CONTENT WITH HYPERLINKS & IMAGES -->
+    <div class="content-section">
+        <h2>About Me & Web Development</h2>
+        <p>Welcome to my assignment webpage. I am <strong>HARSHITH</strong> from <strong>KPRIT-COE</strong>, currently learning modern front-end design techniques including HTML5 and CSS3.</p>
+        
+        <!-- Updated with the user's provided assignment notebook image -->
+        <h3>Assignment Notebook Source</h3>
+        <img src="input_file_0.png" alt="Handwritten assignment notes on a wooden background" class="profile-img">
+
+        <p id="links">Useful Links: 
+            <a href="https://kprit.ac.in" target="_blank">KPRIT Official Website</a> | 
+            <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+        </p>
+    </div>
+
+    <!-- 4. LISTS (Personal Data) -->
+    <div class="content-section">
+        <h2>My Technical Skills & Interests</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, C++, JavaScript</li>
+            <li><strong>Web Technologies:</strong> HTML5, CSS3, Bootstrap</li>
+            <li><strong>Areas of Interest:</strong> Web Development, Artificial Intelligence</li>
+        </ul>
+    </div>
+
+    <!-- 5. CREATING TABLES WITH DIFFERENT SIZES (Min 3 Inputs) -->
+    <div class="content-section">
+        <h2>Academic Marks Record</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Student Name</th>
+                    <th>College</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>HARSHITH</td>
+                    <td>KPRIT-COE</td>
+                    <td>Web Development</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>HARSHITH</td>
+                    <td>KPRIT-COE</td>
+                    <td>Data Structures</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>HARSHITH</td>
+                    <td>KPRIT-COE</td>
+                    <td>Database Management</td>
+                    <td>92</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 6. CREATING FORMS -->
+    <div class="content-section">
+        <h2>Student Feedback Form</h2>
+        <form action="#" method="post">
+            <label for="fullname">Student Name:</label>
+            <input type="text" id="fullname" name="fullname" value="HARSHITH" required>
+
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name="college" value="KPRIT-COE" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="harshith@example.com" required>
+
+            <label for="feedback">Assignment Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback here..."></textarea>
+
+            <button type="submit">Submit Assignment</button>
+        </form>
+    </div>
+
+</body>
+</html>
